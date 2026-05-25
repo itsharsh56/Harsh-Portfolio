@@ -4,6 +4,10 @@ A modern personal portfolio website for **Harsh**, focused on backend engineerin
 
 This project is built as a **static frontend portfolio** using plain **HTML, CSS, and JavaScript**. It is designed to be clean, responsive, and easy to customize for future updates.
 
+## Live Demo
+
+🚀 Deployment Link: [View Portfolio Website](https://itsharsh56-portfolio.netlify.app/)
+
 ## Overview
 
 The portfolio highlights:
