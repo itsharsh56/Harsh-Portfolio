@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harsh — Backend Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">Harsh</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" onclick="closeNav()">About</a></li>
+      <li><a href="#skills" onclick="closeNav()">Skills</a></li>
+      <li><a href="#experience" onclick="closeNav()">Experience</a></li>
+      <li><a href="#projects" onclick="closeNav()">Projects</a></li>
+      <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+    </ul>
+    <button class="burger" id="burger" onclick="toggleNav()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-lines"></div>
+
+    <div class="hero-text">
+      <!-- <p class="hero-eyebrow">Available for opportunities</p> -->
+      <h1>Software<br><em>Developer</em><br>Backend</h1>
+      <p class="hero-sub">Building scalable REST APIs and high-performance backend systems that power real-world
+        products — with a focus on reliability, speed, and clean architecture.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="https://drive.google.com/file/d/17ZhQxYGZKWLHVPjp_nQ4yi4LwKjJM18q/view?usp=drive_link" target="_blank"
+          class="btn-outline">Resume</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-photo-wrap">
+        <img src="./images/Passport_Size_Photo.jpg" alt="Harsh" class="hero-photo">
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p class="section-label">About Me</p>
+        <h2>Developer by craft,<br><em>problem-solver</em> at heart</h2>
+        <p>I'm <strong>Harsh</strong>, a Backend Software Developer based in Uttar Pradesh — currently pursuing B.Tech
+          in Computer Science at Ajay Kumar Garg Engineering College.</p>
+        <p>I specialize in designing <strong>production-grade backend systems</strong> using Node.js, NestJS, and
+          databases like MySQL and MongoDB. My work focuses on reducing latency, handling edge cases gracefully, and
+          building APIs that scale without friction.</p>
+        <p>Outside of work, I'm an active competitive programmer who has solved <strong>300+ DSA problems</strong>
+          across LeetCode and CodeChef — constantly sharpening problem-solving instincts.</p>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <div class="hi-num">25%</div>
+            <div class="hi-label">API response time reduced</div>
+          </div>
+          <div class="highlight-item">
+            <div class="hi-num">40%</div>
+            <div class="hi-label">Query performance improved</div>
+          </div>
+          <div class="highlight-item">
+            <div class="hi-num">1590</div>
+            <div class="hi-label">LeetCode max rating</div>
+          </div>
+          <div class="highlight-item">
+            <div class="hi-num">2★</div>
+            <div class="hi-label">CodeChef rating</div>
+          </div>
+        </div>
+        <div class="location-chip">📍 Uttar Pradesh, India</div>
+      </div>
+      <div class="about-visual reveal reveal-delay-2">
+        <div class="about-quote-block">
+          <blockquote>"Reduce latency, improve reliability, and deliver production-ready systems — that's the standard I
+            hold myself to."</blockquote>
+          <cite>— Harsh, Backend Developer</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <p class="section-label reveal">Technical Skills</p>
+    <h2 class="reveal">Tools I work <em>with</em></h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-card-icon">⚡</div>
+        <h3>Backend</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">NestJS</span>
+          <span class="skill-tag">Express.js</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">GraphQL</span>
+          <span class="skill-tag">JWT Auth</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="skill-card-icon">🗄️</div>
+        <h3>Databases</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">Query Optimization</span>
+          <span class="skill-tag">Indexing</span>
+          <span class="skill-tag">Aggregations</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-delay-2">
+        <div class="skill-card-icon">🎨</div>
+        <h3>Frontend</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">React.js</span>
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">Tailwind</span>
+          <span class="skill-tag">Bootstrap</span>
+          <span class="skill-tag">Chart.js</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-icon">💻</div>
+        <h3>Languages</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="skill-card-icon">☁️</div>
+        <h3>Cloud & DevOps</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">Bitbucket</span>
+          <span class="skill-tag">Postman</span>
+          <span class="skill-tag">Render</span>
+          <span class="skill-tag">Netlify</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-delay-2">
+        <div class="skill-card-icon">🧠</div>
+        <h3>Core Concepts</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">DSA</span>
+          <span class="skill-tag">System Design</span>
+          <span class="skill-tag">OOPs</span>
+          <span class="skill-tag">API Design</span>
+          <span class="skill-tag">Scalability</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <p class="section-label reveal">Experience</p>
+    <h2 class="reveal">Where I've <em>worked</em></h2>
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <div class="tl-meta">
+          <span class="tl-date">Feb 2026 – Present</span>
+          <span class="tl-company">SyneGrow</span>
+        </div>
+        <div class="tl-role">Software Development Engineer Intern</div>
+        <ul class="tl-points">
+          <li>Designed and optimized backend APIs for checkout and transaction workflows (business-critical systems)
+            using Node.js, NestJS, and MySQL.</li>
+          <li>Reduced API response time by <strong>25%</strong> through query optimization, indexing, and efficient data
+            handling.</li>
+          <li>Improved system reliability by handling edge cases such as failed transactions, retries, and data
+            consistency.</li>
+          <li>Collaborated with cross-functional teams to deliver scalable backend solutions impacting real-world user
+            flows.</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-meta">
+          <span class="tl-date">Sept 2024 – Nov 2024</span>
+          <span class="tl-company">OctaNet Services Pvt Ltd.</span>
+        </div>
+        <div class="tl-role">Web Developer Intern</div>
+        <ul class="tl-points">
+          <li>Engineered full-stack web features using HTML, CSS, JavaScript, and REST APIs improving user experience
+            for 50+ active users.</li>
+          <li>Improved page load performance by <strong>30%</strong> through browser caching, backend optimization, and
+            efficient API design.</li>
+          <li>Reduced API latency by <strong>10–15%</strong> by optimizing client-server communication and minimizing
+            redundant API calls.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="section-label reveal">Projects</p>
+    <h2 class="reveal">Things I've <em>built</em></h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-num">01</div>
+        <div class="project-title">CRUD Application (NestJS)</div>
+        <div class="project-stack">
+          <span class="project-tech">NestJS</span>
+          <span class="project-tech">TypeScript</span>
+          <span class="project-tech">REST API</span>
+          <span class="project-tech">CRUD</span>
+          <span class="project-tech">TypeORM</span>
+        </div>
+        <p class="project-desc">Clean, production-style CRUD application built with NestJS demonstrating structured
+          module architecture, DTO validation, TypeORM database integration, and scalable API design patterns.</p>
+        <a href="https://github.com/itsharsh56/crud-application-nestjs" target="_blank" class="project-link">View
+          Project</a>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-num">02</div>
+        <div class="project-title">Task Flow</div>
+        <div class="project-stack">
+          <span class="project-tech">React</span>
+          <span class="project-tech">NestJS</span>
+          <span class="project-tech">MySQL</span>
+          <span class="project-tech">TypeORM</span>
+          <span class="project-tech">JWT</span>
+        </div>
+        <p class="project-desc">Production-grade full-stack team project management platform with Kanban boards,
+          role-based access control (Admin/Member), real-time analytics dashboards, in-app notifications, and activity
+          logs. Deployed live on Netlify.</p>
+        <a href="https://github.com/itsharsh56/Task-Flow" target="_blank" class="project-link">View Project</a>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-num">03</div>
+        <div class="project-title">Finance Dashboard</div>
+        <div class="project-stack">
+          <span class="project-tech">Node.js</span>
+          <span class="project-tech">NestJS</span>
+          <span class="project-tech">MySQL</span>
+          <span class="project-tech">Chart.js</span>
+        </div>
+        <p class="project-desc">Backend-driven finance dashboard with REST APIs for transaction tracking, data
+          aggregation, and real-time analytics. Features category-wise and monthly insights via optimized database
+          pipelines.</p>
+        <a href="https://github.com/itsharsh56/finance_dashboard" target="_blank" class="project-link">View Project</a>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-num">04</div>
+        <div class="project-title">Split-Wise(Expense Tracker)</div>
+        <div class="project-stack">
+          <span class="project-tech">Node.js</span>
+          <span class="project-tech">Express</span>
+          <span class="project-tech">React</span>
+          <span class="project-tech">MongoDB</span>
+        </div>
+        <p class="project-desc">Full-stack expense tracking system with JWT authentication, category/date-based filters,
+          monthly summaries, and dashboards. Optimized API responses improved performance by 40%.</p>
+        <a href="https://github.com/itsharsh56/split-wise" target="_blank" class="project-link">View Project</a>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-num">05</div>
+        <div class="project-title">Fitness Tracker</div>
+        <div class="project-stack">
+          <span class="project-tech">Node.js</span>
+          <span class="project-tech">Express</span>
+          <span class="project-tech">React</span>
+          <span class="project-tech">MongoDB</span>
+        </div>
+        <p class="project-desc">Scalable fitness tracking web application with efficient data models and APIs enabling
+          low-latency performance and fast data retrieval under concurrent usage. Achieved 5% increase in user
+          engagement.</p>
+        <a href="https://github.com/itsharsh56/fitnness-tracker" target="_blank" class="project-link">View Project</a>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-num">06</div>
+        <div class="project-title">Smart Hotel Room Allocation</div>
+        <div class="project-stack">
+          <span class="project-tech">React</span>
+          <span class="project-tech">Express.js</span>
+          <span class="project-tech">MongoDB</span>
+          <span class="project-tech">Mongoose</span>
+          <span class="project-tech">REST API</span>
+          <span class="project-tech">Vite</span>
+        </div>
+        <p class="project-desc">Production-ready full-stack hostel room inventory and allocation system. Uses a greedy
+          best-fit algorithm to auto-allocate rooms based on capacity, AC, and washroom filters. Features allocation
+          logs, room search, and deployed on Render + Vercel.</p>
+        <a href="https://github.com/itsharsh56/Smart_Hotel_Room_Allocation" target="_blank" class="project-link">View
+          Project</a>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-num">07</div>
+        <div class="project-title">MealMate</div>
+        <div class="project-stack">
+          <span class="project-tech">React</span>
+          <span class="project-tech">Vite</span>
+          <span class="project-tech">JavaScript</span>
+          <span class="project-tech">CSS</span>
+          <span class="project-tech">Netlify</span>
+        </div>
+        <p class="project-desc">Modern meal discovery and planning web app with a clean responsive UI, cart
+          functionality, and authentication screens. Fast client-side rendering with modular React components. Live on
+          Netlify.</p>
+        <a href="https://github.com/itsharsh56/mealmate" target="_blank" class="project-link">View Project</a>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-num">08</div>
+        <div class="project-title">Snake Game</div>
+        <div class="project-stack">
+          <span class="project-tech">Game Logic</span>
+          <span class="project-tech">Collision Handling</span>
+          <span class="project-tech">Score Tracking</span>
+          <span class="project-tech">JavaScript</span>
+          <span class="project-tech">HTML5</span>
+          <span class="project-tech">CSS</span>
+        </div>
+        <p class="project-desc">Classic Snake implementation focused on movement logic, collision handling, score
+          tracking, and building a smooth gameplay loop.</p>
+        <a href="https://github.com/itsharsh56/Snake-Game" target="_blank" class="project-link">View Project</a>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-num">09</div>
+        <div class="project-title">Speed Test</div>
+        <div class="project-stack">
+          <span class="project-tech">JavaScript</span>
+          <span class="project-tech">HTML5</span>
+          <span class="project-tech">CSS</span>
+          <span class="project-tech">Performance</span>
+        </div>
+        <p class="project-desc">Interactive typing speed test application that measures WPM (words per minute) and
+          accuracy in real time. Includes timer, live highlighting of correct/incorrect keystrokes, and results summary.
+        </p>
+        <a href="https://github.com/itsharsh56/speed-test" target="_blank" class="project-link">View Project</a>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-num">10</div>
+        <div class="project-title">Drum Kit</div>
+        <div class="project-stack">
+          <span class="project-tech">JavaScript</span>
+          <span class="project-tech">HTML5</span>
+          <span class="project-tech">CSS</span>
+          <span class="project-tech">Web Audio</span>
+        </div>
+        <p class="project-desc">Interactive drum kit project that maps user input to sounds and visual feedback,
+          turning simple actions into a playful music experience.</p>
+        <a href="https://github.com/itsharsh56/drum_kit" target="_blank" class="project-link">View Project</a>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-num">11</div>
+        <div class="project-title">Hotel Management System</div>
+        <div class="project-stack">
+          <span class="project-tech">C++</span>
+          <span class="project-tech">OOP</span>
+          <span class="project-tech">STL Vectors</span>
+          <span class="project-tech">Structs</span>
+          <span class="project-tech">Console App</span>
+        </div>
+        <p class="project-desc">Console-based hotel customer management system in C++ with full CRUD — add, search,
+          modify, and delete customer records using structs and STL vectors. Demonstrates core C++ concepts: structs,
+          iterators, getline input, switch-driven menus, and in-memory storage.</p>
+        <a href="https://github.com/itsharsh56/Hotel_management" target="_blank" class="project-link">View Project</a>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-num">12</div>
+        <div class="project-title">Doctor Appointment System</div>
+        <div class="project-stack">
+          <span class="project-tech">C++</span>
+          <span class="project-tech">OOP</span>
+          <span class="project-tech">File Handling</span>
+        </div>
+        <p class="project-desc">Console-based appointment scheduling system in C++ managing bookings, availability, and
+          scheduling conflicts. Applied object-oriented design with persistent storage managing hundreds of records.</p>
+        <a href="https://github.com/itsharsh56/doctor_appointment" target="_blank" class="project-link">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <p class="section-label reveal">Education</p>
+    <h2 class="reveal">Academic <em>background</em></h2>
+    <div class="edu-card reveal">
+      <div class="edu-icon">🎓</div>
+      <div class="edu-details">
+        <h3>Bachelor of Technology — Computer Science & Engineering</h3>
+        <p class="edu-school">Ajay Kumar Garg Engineering College, Ghaziabad, Uttar Pradesh</p>
+        <div class="edu-meta">
+          <span class="edu-badge">2023 — 2026</span>
+          <span>CGPA: 7.55 / 10</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="edu-card reveal">
+      <div class="edu-icon">🎓</div>
+      <div class="edu-details">
+        <h3>Diploma — Civil Engineering</h3>
+        <p class="edu-school">Goel Institute Of Technology And Management, Lucknow, Uttar Pradesh</p>
+        <div class="edu-meta">
+          <span class="edu-badge">2020 — 2023</span>
+          <span>Percentage: 76.49</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Achievements -->
+    <br><br>
+    <p class="section-label reveal">Achievements</p>
+    <h2 class="reveal">Notable <em>milestones</em></h2>
+    <div class="achievements-list">
+      <div class="achievement-item reveal">
+        <div class="ach-icon">🏆</div>
+        <div class="ach-text">
+          <h4>Smart India Hackathon 2024</h4>
+          <p>Built a low-energy web platform to quantify carbon emissions of coal mines, perform carbon sink gap
+            analysis, and generate compliance-ready sustainability reports.</p>
+        </div>
+      </div>
+      <div class="achievement-item reveal reveal-delay-1">
+        <div class="ach-icon">⚡</div>
+        <div class="ach-text">
+          <h4>300+ DSA Problems Solved</h4>
+          <p>Solved 300+ data structures and algorithms problems across LeetCode and CodeChef, achieving a max rating of
+            1590 on LeetCode.</p>
+        </div>
+      </div>
+      <div class="achievement-item reveal reveal-delay-2">
+        <div class="ach-icon">⭐</div>
+        <div class="ach-text">
+          <h4>CodeChef 2-Star Coder</h4>
+          <p>Attained 2-star rating on CodeChef (max 1400) through consistent competitive programming performance and
+            contest participation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section-label reveal">Contact</p>
+    <h2 class="reveal">Let's build something <em>great</em></h2>
+    <p class="contact-sub reveal">Open to backend engineering roles, internships, and interesting collaborations. Let's
+      talk.</p>
+    <div class="contact-links reveal">
+      <a href="mailto:harsh531970@gmail.com" class="contact-link primary">✉ harsh531970@gmail.com</a>
+      <a href="https://www.linkedin.com/in/harshvr/" target="_blank" class="contact-link secondary">LinkedIn</a>
+      <a href="https://github.com/itsharsh56" target="_blank" class="contact-link secondary">GitHub</a>
+      <a href="tel:+917572053621" class="contact-link secondary">📞 +91 75720 53621</a>
+    </div>
+    <p class="contact-footer reveal">© 2025 Harsh · UP, India · Built with care</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
